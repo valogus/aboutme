@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:rgb(243, 237, 230);
+}
+
+
+body {
+    font-family: "Montserrat",Arial,sans-serif;
+}
+.left h3{
+    font-size: 25px;
+    font-weight: bolder;
+    margin:20px;
+}
+.left {
+    width:350px;
+    padding: 10%;
+    display: block;
+    margin: 40px;
+    text-align: center;
+    margin-top:-60%;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.left a{
+ color:rgb(78, 78, 78);
+ text-decoration:none;
+ line-height: 50px;
+ position: relative;
+}
+.left a:after{
+    display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px; 
+	background-color: #000000; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+.left a:hover:after,
+.left a:focus:after{
+    width: 100%;
+}
+.left a:hover{
+  font-style: unset;
+  color:rgb(0, 0, 0);
+}
+
+.circle-image{
+    display: inline-block;
+    width: 66%;
+    padding-bottom: 66%;
+    height: 0;
+    position: relative;
+
+}
+.logo{
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    clip-path: circle(50%);
+    object-fit: cover;
+  }
+
+  @keyframes fade {
+    0%   { opacity: 0; }
+    11.11%   { opacity: 1; }
+    33.33%  { opacity: 1; }
+    44.44%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+.centr{
+    width:550px;
+    height:800px;
+    position:relative
+}
+.photomain img{
+    position:absolute;
+    width:550px;
+    height:800px;
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 9s; 
+    animation-iteration-count: infinite;
+    
+}
+.photomain img:nth-child(1) { animation-delay: 0s;  }
+.photomain img:nth-child(2) { animation-delay: 3s;  }
+.photomain img:nth-child(3) { animation-delay: 6s;  }
+
+.right{
+    width:550px;
+    margin-top:-20%;
+    margin-left:20%;
+}
+.right h3,h2{
+    line-height: 50px;
+}
+.right img{
+    margin-top:10%;
+    width:50px;
+    height:50px;
+}
+.right p{
+    line-height: 30px;
+}
+.photo img{
+    width:500px;
+    height: 400px;
+}
+.photo{
+    height:800px;
+    
+}
+
+
+  
+ 
